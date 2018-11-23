@@ -22,6 +22,7 @@ public class Cliente extends EntidadeDominio {
 	private List<EnderecoCobranca> enderecosCobranca;
 	private List<EnderecoEntrega> enderecosEntrega;
 	private List<EnderecoResidencial> enderecosResidencial;
+	private Ranking ranking;
 	
 	public boolean isAtivo() {
 		return isAtivo;
