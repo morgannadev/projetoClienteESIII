@@ -1,4 +1,4 @@
-package br.com.fatecesiii.dominio;
+package br.com.fatecesiii.dominio.entidadedominio;
 
 import java.util.Date;
 

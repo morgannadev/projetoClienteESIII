@@ -1,4 +1,6 @@
-package br.com.fatecesiii.dominio;
+package br.com.fatecesiii.dominio.cliente;
+
+import br.com.fatecesiii.dominio.entidadedominio.EntidadeDominio;
 
 public class Genero extends EntidadeDominio {
 

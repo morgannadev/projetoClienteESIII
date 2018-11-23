@@ -1,6 +1,8 @@
-package br.com.fatecesiii.dominio;
+package br.com.fatecesiii.dominio.cliente;
 
-public class Usuario {
+import br.com.fatecesiii.dominio.entidadedominio.EntidadeDominio;
+
+public class Usuario extends EntidadeDominio {
 
 	private String usuario;
 	private String senha;

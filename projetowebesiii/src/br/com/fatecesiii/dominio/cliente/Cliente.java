@@ -1,9 +1,16 @@
-package br.com.fatecesiii.dominio;
+package br.com.fatecesiii.dominio.cliente;
 
 import java.util.Date;
 import java.util.List;
 
+import br.com.fatecesiii.dominio.endereco.EnderecoCobranca;
+import br.com.fatecesiii.dominio.endereco.EnderecoEntrega;
+import br.com.fatecesiii.dominio.endereco.EnderecoResidencial;
+import br.com.fatecesiii.dominio.entidadedominio.EntidadeDominio;
+
 public class Cliente extends EntidadeDominio {
+	
+	// TODO: verificar sobre modelagem para o ranking numero do cliente com base no perfil de compra
 	
 	private boolean isAtivo;
 	private Genero genero;
