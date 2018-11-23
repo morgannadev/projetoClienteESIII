@@ -1,2 +1,2 @@
 # Projeto - CRUD (Cliente)
-Projeto Java + Design Patterns em desenvolvimento.
+Projeto Java + Design Patterns - está em desenvolvimento.
