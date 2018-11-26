@@ -9,7 +9,7 @@ Projeto está em desenvolvimento para trabalho da faculdade.
 * Java 8;
 * Apache Tomcat 9.
 
-## Design Patters
+## Design Patterns
 * View Helper;
 * Command;
 * Fachada.
