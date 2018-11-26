@@ -16,4 +16,5 @@ Projeto está em desenvolvimento para trabalho da faculdade.
 
 ## Em breve
 * Descrições dos design patterns;
+* Modelagem e diagrama de classes;
 * Mais informações sobre o projeto.
