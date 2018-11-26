@@ -1,4 +1,4 @@
-package br.com.fatecesiii.controle.implementacao.controle;
+package br.com.fatecesiii.core.implementacao.controle;
 
 import br.com.fatecesiii.core.IFachada;
 import br.com.fatecesiii.core.aplicacao.Resultado;
