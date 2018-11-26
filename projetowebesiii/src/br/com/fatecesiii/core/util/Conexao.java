@@ -14,7 +14,7 @@ public class Conexao {
 		String user = "postgres";
 		String password = "postgres";
 		Class.forName(driver);
-		Connection connection = DriverManager.getConnection( url, user, password);
+		Connection connection = DriverManager.getConnection(url, user, password);
 
 		return connection;
 	}
