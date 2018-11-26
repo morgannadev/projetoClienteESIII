@@ -103,4 +103,12 @@ public class Cliente extends EntidadeDominio {
 	public void setEnderecosResidencial(List<EnderecoResidencial> enderecosResidencial) {
 		this.enderecosResidencial = enderecosResidencial;
 	}
+
+	public Ranking getRanking() {
+		return ranking;
+	}
+
+	public void setRanking(Ranking ranking) {
+		this.ranking = ranking;
+	}
 }
