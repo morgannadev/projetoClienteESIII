@@ -11,15 +11,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.com.fatecesiii.controle.web.command.ICommand;
+import br.com.fatecesiii.controle.web.command.implementacao.AlterarCommand;
+import br.com.fatecesiii.controle.web.command.implementacao.ConsultarCommand;
+import br.com.fatecesiii.controle.web.command.implementacao.ExcluirCommand;
+import br.com.fatecesiii.controle.web.command.implementacao.SalvarCommand;
+import br.com.fatecesiii.controle.web.command.implementacao.VisualizarCommand;
 import br.com.fatecesiii.controle.web.vh.IViewHelper;
 import br.com.fatecesiii.controle.web.vh.implementacao.ClienteViewHelper;
 import br.com.fatecesiii.core.aplicacao.Resultado;
 import br.com.fatecesiii.dominio.entidadedominio.EntidadeDominio;
-import br.com.fatecesiii.web.command.implementacao.AlterarCommand;
-import br.com.fatecesiii.web.command.implementacao.ConsultarCommand;
-import br.com.fatecesiii.web.command.implementacao.ExcluirCommand;
-import br.com.fatecesiii.web.command.implementacao.SalvarCommand;
-import br.com.fatecesiii.web.command.implementacao.VisualizarCommand;
 
 @WebServlet("/Servlet")
 public class Servlet extends HttpServlet {

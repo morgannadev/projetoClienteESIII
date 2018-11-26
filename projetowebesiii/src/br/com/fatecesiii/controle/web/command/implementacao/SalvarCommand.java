@@ -1,4 +1,4 @@
-package br.com.fatecesiii.web.command.implementacao;
+package br.com.fatecesiii.controle.web.command.implementacao;
 
 import br.com.fatecesiii.core.aplicacao.Resultado;
 import br.com.fatecesiii.dominio.entidadedominio.EntidadeDominio;
