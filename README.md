@@ -1,20 +1,20 @@
-# Projeto Engenharia de Software III - CRUD (Cliente)
-Projeto está em desenvolvimento para trabalho da faculdade.
+# Projeto - CRUD (Cliente)
+Em desenvolvimento.
 
-## Sobre
-* Nome: Morganna Giovanelli de Souza;
-* Contatos: [@morgiovanelli](https://about.me/morgiovanelli).
-
-## Informações
-* Java 8;
-* Apache Tomcat 9.
+## Informações do Projeto
+* Java: versão 8;
+* Servidor: Apache Tomcat 9;
+* Banco de dados: PostgreSQL.
 
 ## Design Patterns
 * View Helper;
 * Command;
-* Fachada.
+* Fachada;
+* Strategy;
+* DAO.
 
 ## Em breve
 * Descrições dos design patterns;
+* Orientações sobre configuração de ambiente (Windows);
 * Modelagem e diagrama de classes;
 * Mais informações sobre o projeto.
