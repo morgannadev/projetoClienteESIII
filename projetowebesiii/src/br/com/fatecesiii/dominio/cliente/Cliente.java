@@ -10,7 +10,6 @@ import br.com.fatecesiii.dominio.entidadedominio.EntidadeDominio;
 
 public class Cliente extends EntidadeDominio {
 	
-	private boolean isAtivo;
 	private Genero genero;
 	private String nome;
 	private String cpf;
@@ -23,14 +22,7 @@ public class Cliente extends EntidadeDominio {
 	private List<Ranking> rankings;
 	private List<Transacao> transacoes;
 	private Usuario usuario;
-	
-	public boolean isAtivo() {
-		return isAtivo;
-	}
-	
-	public void setAtivo(boolean isAtivo) {
-		this.isAtivo = isAtivo;
-	}
+	private StatusCliente status;
 	
 	public Genero getGenero() {
 		return genero;
@@ -117,5 +109,13 @@ public class Cliente extends EntidadeDominio {
 	}
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
+	}
+
+	public StatusCliente getStatus() {
+		return status;
+	}
+
+	public void setStatus(StatusCliente status) {
+		this.status = status;
 	}
 }
