@@ -4,6 +4,8 @@ import br.com.fatecesiii.dominio.entidadedominio.EntidadeDominio;
 
 public class Usuario extends EntidadeDominio {
 
+	// TODO: Criptografar a senha do usuário.
+	
 	private String usuario;
 	private String senha;
 	

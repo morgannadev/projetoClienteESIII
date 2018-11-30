@@ -4,13 +4,13 @@ import br.com.fatecesiii.dominio.entidadedominio.EntidadeDominio;
 
 public class Bandeira extends EntidadeDominio {
 
-	private String nome;
+	private String nomeBandeira;
 
-	public String getNome() {
-		return nome;
+	public String getNomeBandeira() {
+		return nomeBandeira;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setNomeBandeira(String nomeBandeira) {
+		this.nomeBandeira = nomeBandeira;
 	}
 }

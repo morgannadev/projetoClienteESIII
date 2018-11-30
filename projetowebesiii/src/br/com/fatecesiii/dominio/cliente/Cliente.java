@@ -10,8 +10,6 @@ import br.com.fatecesiii.dominio.entidadedominio.EntidadeDominio;
 
 public class Cliente extends EntidadeDominio {
 	
-	// TODO: verificar sobre modelagem para o ranking numero do cliente com base no perfil de compra
-	
 	private boolean isAtivo;
 	private Genero genero;
 	private String nome;
@@ -22,7 +20,9 @@ public class Cliente extends EntidadeDominio {
 	private List<EnderecoCobranca> enderecosCobranca;
 	private List<EnderecoEntrega> enderecosEntrega;
 	private List<EnderecoResidencial> enderecosResidencial;
-	private Ranking ranking;
+	private List<Ranking> rankings;
+	private List<Transacao> transacoes;
+	private Usuario usuario;
 	
 	public boolean isAtivo() {
 		return isAtivo;
@@ -91,24 +91,31 @@ public class Cliente extends EntidadeDominio {
 	public List<EnderecoEntrega> getEnderecosEntrega() {
 		return enderecosEntrega;
 	}
-	
 	public void setEnderecosEntrega(List<EnderecoEntrega> enderecosEntrega) {
 		this.enderecosEntrega = enderecosEntrega;
 	}
-	
 	public List<EnderecoResidencial> getEnderecosResidencial() {
 		return enderecosResidencial;
 	}
-	
 	public void setEnderecosResidencial(List<EnderecoResidencial> enderecosResidencial) {
 		this.enderecosResidencial = enderecosResidencial;
 	}
-
-	public Ranking getRanking() {
-		return ranking;
+	public List<Ranking> getRankings() {
+		return rankings;
 	}
-
-	public void setRanking(Ranking ranking) {
-		this.ranking = ranking;
+	public void setRankings(List<Ranking> rankings) {
+		this.rankings = rankings;
+	}
+	public List<Transacao> getTransacoes() {
+		return transacoes;
+	}
+	public void setTransacoes(List<Transacao> transacoes) {
+		this.transacoes = transacoes;
+	}
+	public Usuario getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 }

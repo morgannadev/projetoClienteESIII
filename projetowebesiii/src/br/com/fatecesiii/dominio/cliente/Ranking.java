@@ -4,13 +4,13 @@ import br.com.fatecesiii.dominio.entidadedominio.EntidadeDominio;
 
 public class Ranking extends EntidadeDominio {
 
-	private String ranking;
+	private int ranking;
 
-	public String getRanking() {
+	public int getRanking() {
 		return ranking;
 	}
 
-	public void setRanking(String ranking) {
+	public void setRanking(int ranking) {
 		this.ranking = ranking;
 	}
 }

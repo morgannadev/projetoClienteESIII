@@ -5,7 +5,7 @@ import br.com.fatecesiii.dominio.entidadedominio.EntidadeDominio;
 public class Cartao extends EntidadeDominio {
 
 	private boolean isPreferencial;
-	private String numero;
+	private String numeroCartao;
 	private String nomeImpressoCartao;
 	private String codigoSeguranca;
 	private Bandeira bandeira;
@@ -18,12 +18,12 @@ public class Cartao extends EntidadeDominio {
 		this.isPreferencial = isPreferencial;
 	}
 	
-	public String getNumero() {
-		return numero;
+	public String getNumeroCartao() {
+		return numeroCartao;
 	}
 	
-	public void setNumero(String numero) {
-		this.numero = numero;
+	public void setNumeroCartao(String numeroCartao) {
+		this.numeroCartao = numeroCartao;
 	}
 	
 	public String getNomeImpressoCartao() {
