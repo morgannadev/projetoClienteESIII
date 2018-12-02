@@ -3,6 +3,7 @@ package br.com.fatecesiii.dominio.cliente;
 import java.util.Date;
 import java.util.List;
 
+import br.com.fatecesiii.dominio.cartao.CartaoCredito;
 import br.com.fatecesiii.dominio.endereco.EnderecoCobranca;
 import br.com.fatecesiii.dominio.endereco.EnderecoEntrega;
 import br.com.fatecesiii.dominio.endereco.EnderecoResidencial;
@@ -23,6 +24,7 @@ public class Cliente extends EntidadeDominio {
 	private List<Transacao> transacoes;
 	private Usuario usuario;
 	private StatusCliente status;
+	private List<CartaoCredito> cartoesCredito;
 	
 	public Genero getGenero() {
 		return genero;
@@ -117,5 +119,13 @@ public class Cliente extends EntidadeDominio {
 
 	public void setStatus(StatusCliente status) {
 		this.status = status;
+	}
+
+	public List<CartaoCredito> getCartoesCredito() {
+		return cartoesCredito;
+	}
+
+	public void setCartoesCredito(List<CartaoCredito> cartoesCredito) {
+		this.cartoesCredito = cartoesCredito;
 	}
 }
