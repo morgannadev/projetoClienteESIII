@@ -9,9 +9,9 @@ public class ConvertDate {
 
 	public static String converteDateString(Date dtData) {  
 
-		SimpleDateFormat formatBra = new SimpleDateFormat("dd/MM/yyyy");
+		SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 		
-		return (formatBra.format(dtData)); 
+		return (formato.format(dtData)); 
 	} 
 		
 	public static Date converteStringDate(String data) {   
@@ -23,8 +23,8 @@ public class ConvertDate {
         
         try {
         	
-        	DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");  
-	        date = (java.util.Date)formatter.parse(data);  
+        	DateFormat formatador = new SimpleDateFormat("dd/MM/yyyy");  
+	        date = (java.util.Date)formatador.parse(data);  
 	        
 	        return date;
         } catch (ParseException e) {   

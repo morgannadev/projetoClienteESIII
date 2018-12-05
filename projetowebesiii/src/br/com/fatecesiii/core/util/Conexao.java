@@ -8,10 +8,15 @@ public class Conexao {
 
 	public static Connection getConnection() throws ClassNotFoundException, SQLException {
 		
-		String driver = "org.postgresql.Driver";
-		String url = "jdbc:postgresql://localhost:5432/fatec12015";
-		String user = "postgres";
-		String password = "postgres";
+		/**
+		 * Para script da criação do banco de dados, verifique a pasta documents do projeto.
+		 * Classe conexão para banco de dados MySQL.
+		 */
+		String driver = "com.mysql.jdbc.Driver";
+		String url = "jdbc:mysql://localhost:3306/projetoweb";
+		String user = "root";
+		String password = "MySQL@123";
+		
 		Class.forName(driver);
 		Connection connection = DriverManager.getConnection(url, user, password);
 
