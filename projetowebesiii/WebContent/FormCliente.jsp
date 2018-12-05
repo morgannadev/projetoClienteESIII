@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
+<%@page import="br.com.fatecesiii.dominio.entidadedominio.EntidadeDominio"%>
 <%@page import="br.com.fatecesiii.dominio.cliente.Cliente"%>
 <%@page import="br.com.fatecesiii.dominio.cliente.Usuario"%>
-<%@page import="br.com.fatecesiii.core.aplicacao.Resultado" %>
+<%@page import="br.com.fatecesiii.core.aplicacao.Resultado"%>
 <%@page import="br.com.fatecesiii.core.util.ConvertDate"%>
-<%@page import="br.com.fatecesiii.dominio.entidadedominio.EntidadeDominio" %>
 <%@page import="java.util.List" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -66,16 +66,7 @@
 					
 				}
 			%>
-			
-			<% 
-			//<label for="txtGenero">Gênero:</label>
-			//<select>
-			//  <option value="feminino">Feminino</option>
-			//  <option value="masculino">Masculino</option>
-			//  <option value="outros">Outros</option>
-			//</select>
-			%>
-			
+
 			<label for="txtTelefone">Telefone:</label>
 			<br>
 			<label for="txtDDD">DDD:</label>
@@ -140,7 +131,18 @@
 				} 
 			%>
 			
-			<input class="btn btn-outline-primary" type="submit" id="operacao" name="operacao" value="SALVAR_CLIENTE" />			
+			<input type="submit" id="operacao" name="operacao" class="btn btn-outline-dark" value="CONSULTAR" />
+			
+			<%
+				
+				if(cliente != null) {
+					out.print("<input type='submit' id='operacao' name='operacao' class='btn btn-outline-primary' value='ALTERAR'/>");	
+					out.print("<input type='submit' id='operacao' name='operacao' class='btn btn-outline-danger' value='EXCLUIR'/>");	
+				} else {
+					out.print("<input type='submit' id='operacao' name='operacao' class='btn btn-outline-success' value='SALVAR'/>");
+				}
+					
+			%>
 		</form>
 	</div>
 	
@@ -158,7 +160,7 @@
 		  </thead>
 		  <tbody>
 		    <%
-			    /*if(resultado != null) {
+			    if(resultado != null) {
 			    	List<EntidadeDominio> entidades = resultado.getEntidades();
 			    	if(entidades != null) {
 			    		for(int i = 0; i < entidades.size(); i++) {
@@ -171,18 +173,8 @@
 						    out.print("</tr>");
 			    		}			    		
 			    	}
-			    }*/
-		    %>
-		      <tr>
-		      	<td>
-		      	<%
-		      		cliente.getNome();
-		      	%>
-				</td>
-		      	<td>2</td>
-		      	<td>3</td>
-		      	<td>4</td>
-			  </tr>
+			    }
+		    %>      
 		      
 		  </tbody>
 		</table>

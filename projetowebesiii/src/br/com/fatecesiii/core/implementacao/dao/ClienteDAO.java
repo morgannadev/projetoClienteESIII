@@ -90,28 +90,22 @@ public class ClienteDAO extends AbstractDAO {
 		Cliente cliente = (Cliente)entidade;
 		String sql = null;
 		
-		/*if(produto.getDescricao() == null){
-			produto.setDescricao("");
-		}
 		
-		if(produto.getId() == null && produto.getDescricao().equals("")){
-			sql = "SELECT * FROM tb_produto";
-		}else if(produto.getId() != null && produto.getDescricao().equals("")){
-			sql = "SELECT * FROM tb_produto WHERE id_pro=?";
-		}else if(produto.getId() == null && !produto.getDescricao().equals("")){
-			sql = "SELECT * FROM tb_produto WHERE descricao like ?";
 		
-		}
+		if(cliente.getId() <= 0 && cliente.getNome().equals("")) {
+			sql = "SELECT * FROM TB_CLIENTE";
+		} else if(cliente.getId() <= 0 && !cliente.getNome().equals("")) {
+			sql = "SELECT * FROM TB_CLIENTE WHERE id_cliente like ?";
+		}	
 	
-	
-	
-		try {
+		/*try {
+			
 			openConnection();
 			prepStatement = connection.prepareStatement(sql);
 			
 			if(produto.getId() != null && produto.getDescricao().equals("")){
 				prepStatement.setInt(1, produto.getId());
-			}else if(produto.getId() == null && !produto.getDescricao().equals("")){
+			} else if(produto.getId() == null && !produto.getDescricao().equals("")){
 				prepStatement.setString(1, "%"+produto.getDescricao()+"%");			
 			}
 			
@@ -133,7 +127,8 @@ public class ClienteDAO extends AbstractDAO {
 			return produtos;
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}*/
+		}
+		*/
 		return null;
 	}
 }
