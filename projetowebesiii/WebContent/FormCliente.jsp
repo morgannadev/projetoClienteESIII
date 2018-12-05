@@ -18,6 +18,7 @@
 	<%
 		Cliente cliente = (Cliente) request.getAttribute("cliente");
 		Usuario usuario = (Usuario) request.getAttribute("usuario");
+		Resultado resultado = (Resultado) session.getAttribute("resultado");
 	%>
 
 	<nav class="navbar navbar-light bg-light">
@@ -138,6 +139,29 @@
 			
 			<input class="btn btn-outline-primary" type="submit" id="operacao" name="operacao" value="SALVAR_CLIENTE" />			
 		</form>
+	</div>
+	
+	<div>
+	
+		<table class="table table-hover">
+		  <thead>
+		    <tr>
+		      <th scope="col">Nome</th>
+		      <th scope="col">CPF</th>
+		      <th scope="col">Telefone</th>
+		      <th scope="col">E-mail</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <%
+			    //out.print("<tr>");
+		   		//out.print("<td>" + + "</td>");
+			      
+			    //out.print("</tr>");
+		    %>
+		  </tbody>
+		</table>
+		
 	</div>
 
 </body>
