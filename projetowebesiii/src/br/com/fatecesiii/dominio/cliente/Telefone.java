@@ -6,7 +6,7 @@ public class Telefone extends EntidadeDominio {
 
 	private TipoTelefone tipoTelefone;
 	private int ddd;
-	private String telefone;
+	private String numeroTelefone;
 	
 	public TipoTelefone getTipoTelefone() {
 		return tipoTelefone;
@@ -24,11 +24,11 @@ public class Telefone extends EntidadeDominio {
 		this.ddd = ddd;
 	}
 	
-	public String getTelefone() {
-		return telefone;
+	public String getNumeroTelefone() {
+		return numeroTelefone;
 	}
 	
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
+	public void setNumeroTelefone(String numeroTelefone) {
+		this.numeroTelefone = numeroTelefone;
 	}
 }

@@ -1,0 +1,15 @@
+.conteiner-cliente {
+    background-color: rgba(255, 255, 255, 0.75);
+    display: block;
+    /*margin: 5em auto 0 auto;*/
+    min-width: 350px;
+    padding: 2em;
+    /*text-align: center;*/
+    width: 30%;
+}
+
+.conteiner-cliente input {
+    display: block;
+    margin-bottom: 0.25em;
+    width: 100%;
+}
