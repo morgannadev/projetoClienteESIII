@@ -3,6 +3,7 @@
     
 <%@page import="br.com.fatecesiii.dominio.cliente.Cliente"%>
 <%@page import="br.com.fatecesiii.dominio.cliente.Usuario"%>
+<%@page import="br.com.fatecesiii.core.aplicacao.Resultado" %>
 <%@page import="br.com.fatecesiii.core.util.ConvertDate"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
