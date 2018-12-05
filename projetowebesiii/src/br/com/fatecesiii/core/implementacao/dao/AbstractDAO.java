@@ -31,7 +31,7 @@ public abstract class AbstractDAO implements IDAO {
 	@Override
 	public void excluir(EntidadeDominio entidade) {		
 		openConnection();
-		PreparedStatement pst = null;		
+		PreparedStatement prepStatement = null;		
 		StringBuilder sb = new StringBuilder();
 		sb.append("DELETE FROM ");
 		sb.append(table);
@@ -43,10 +43,10 @@ public abstract class AbstractDAO implements IDAO {
 		try {
 			
 			connection.setAutoCommit(false);
-			pst = connection.prepareStatement(sb.toString());
-			pst.setInt(1, entidade.getId());
+			prepStatement = connection.prepareStatement(sb.toString());
+			prepStatement.setInt(1, entidade.getId());
 
-			pst.executeUpdate();
+			prepStatement.executeUpdate();
 			connection.commit();
 		} catch (SQLException e) {
 			
@@ -64,7 +64,7 @@ public abstract class AbstractDAO implements IDAO {
 		finally {
 			
 			try {
-				pst.close();
+				prepStatement.close();
 				if(ctrlTransaction)
 					connection.close();
 				
