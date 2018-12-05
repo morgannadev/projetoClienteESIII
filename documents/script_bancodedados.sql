@@ -191,6 +191,7 @@ CREATE TABLE IF NOT EXISTS TB_CLIENTE (
 -- considerando dados abaixo para teste
 
 INSERT INTO TB_USUARIO (usuario, senha, data_cadastro) VALUES ('morganna', '123', now());
+INSERT INTO TB_USUARIO (usuario, senha, data_cadastro) VALUES ('user', '123', now());
 
 INSERT INTO TB_GENERO (genero, data_cadastro) VALUES ('Feminino', now());
 INSERT INTO TB_GENERO (genero, data_cadastro) VALUES ('Masculino', now());
@@ -271,3 +272,26 @@ INSERT INTO TB_TELEFONE (ddd, telefone, id_tipo_telefone, data_cadastro) VALUES 
 INSERT INTO TB_TELEFONE (ddd, telefone, id_tipo_telefone, data_cadastro) VALUES (11, '46469900', 1, now());
 INSERT INTO TB_TELEFONE (ddd, telefone, id_tipo_telefone, data_cadastro) VALUES (11, '34343232', 2, now());
 
+INSERT INTO TB_CARTAO (cartao, is_preferencial, numero_cartao, id_tipo_cartao, id_bandeira, data_cadastro) 
+			   VALUES ('cartão', true, '1234567890123456', 1, 1, now());
+INSERT INTO TB_CARTAO (cartao, is_preferencial, numero_cartao, id_tipo_cartao, id_bandeira, data_cadastro) 
+			   VALUES ('cartão', false, '0987654321098765', 1, 2, now());
+			   
+INSERT INTO TB_RANKING (ranking, data_cadastro) VALUES (1, now());
+INSERT INTO TB_RANKING (ranking, data_cadastro) VALUES (2, now());
+INSERT INTO TB_RANKING (ranking, data_cadastro) VALUES (3, now());
+
+INSERT INTO TB_ENDERECO (logradouro, numero, cep, observacoes, data_cadastro, id_tipo_logradouro,
+						 id_tipo_residencia, id_tipo_endereco, id_bairro, id_cidade, id_estado, id_pais)
+				 VALUES ('Rua das Flores', 12, '09009090', '', now(), 1, 1, 1, 2, 1, 1, 1);
+INSERT INTO TB_ENDERECO (logradouro, numero, cep, observacoes, data_cadastro, id_tipo_logradouro,
+						 id_tipo_residencia, id_tipo_endereco, id_bairro, id_cidade, id_estado, id_pais)
+				 VALUES ('Avenida Brasil', 8722, '08080888', '', now(), 2, 1, 1, 4, 2, 1, 1);
+				 
+INSERT INTO TB_CLIENTE (nome, cpf, data_nascimento, email, id_genero, id_endereco, id_ranking, id_transacao,
+						id_usuario, id_status_cliente, id_cartao, id_telefone, data_cadastro)
+				VALUES ('Josefina Cunha', '12345678901', now(), 'josefina@email.com', 1, 1, 1, 1, 1, 1, 1, 1, now());
+INSERT INTO TB_CLIENTE (nome, cpf, data_nascimento, email, id_genero, id_endereco, id_ranking, id_transacao,
+						id_usuario, id_status_cliente, id_cartao, id_telefone, data_cadastro)
+				VALUES ('Marcelino Pedroso', '45678901234', now(), 'marcelino@email.com.br', 2, 2, 2, 2, 2, 2, 2, 2, now());
+                
