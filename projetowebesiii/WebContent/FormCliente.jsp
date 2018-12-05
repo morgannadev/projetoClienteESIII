@@ -5,6 +5,8 @@
 <%@page import="br.com.fatecesiii.dominio.cliente.Usuario"%>
 <%@page import="br.com.fatecesiii.core.aplicacao.Resultado" %>
 <%@page import="br.com.fatecesiii.core.util.ConvertDate"%>
+<%@page import="br.com.fatecesiii.dominio.entidadedominio.EntidadeDominio" %>
+<%@page import="java.util.List" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -151,15 +153,37 @@
 		      <th scope="col">CPF</th>
 		      <th scope="col">Telefone</th>
 		      <th scope="col">E-mail</th>
+		      
 		    </tr>
 		  </thead>
 		  <tbody>
 		    <%
-			    //out.print("<tr>");
-		   		//out.print("<td>" + + "</td>");
-			      
-			    //out.print("</tr>");
+			    /*if(resultado != null) {
+			    	List<EntidadeDominio> entidades = resultado.getEntidades();
+			    	if(entidades != null) {
+			    		for(int i = 0; i < entidades.size(); i++) {
+			    			out.print("<tr>");
+					   		out.print("<td>" + cliente.getNome() + "</td>");
+					   		out.print("<td>" + cliente.getCpf() + "</td>");
+					   		out.print("<td>(" + cliente.getTelefones().get(i).getDdd() + ") " + cliente.getTelefones().get(i).getNumeroTelefone() + "</td>");
+					   		out.print("<td>" + cliente.getEmail() + "</td>");
+					   		//out.print("<td></td>");
+						    out.print("</tr>");
+			    		}			    		
+			    	}
+			    }*/
 		    %>
+		      <tr>
+		      	<td>
+		      	<%
+		      		cliente.getNome();
+		      	%>
+				</td>
+		      	<td>2</td>
+		      	<td>3</td>
+		      	<td>4</td>
+			  </tr>
+		      
 		  </tbody>
 		</table>
 		
