@@ -188,6 +188,86 @@ CREATE TABLE IF NOT EXISTS TB_CLIENTE (
 	FOREIGN KEY(id_telefone) REFERENCES TB_TELEFONE (id_telefone)
 );
 
+-- considerando dados abaixo para teste
+
+INSERT INTO TB_USUARIO (usuario, senha, data_cadastro) VALUES ('morganna', '123', now());
+
 INSERT INTO TB_GENERO (genero, data_cadastro) VALUES ('Feminino', now());
 INSERT INTO TB_GENERO (genero, data_cadastro) VALUES ('Masculino', now());
 INSERT INTO TB_GENERO (genero, data_cadastro) VALUES ('Outros', now());
+
+INSERT INTO TB_PAIS (pais, data_cadastro) VALUES ('Brasil', now());
+
+INSERT INTO TB_TRANSACAO (transacao, data_cadastro) VALUES ('Cadastro', now());
+INSERT INTO TB_TRANSACAO (transacao, data_cadastro) VALUES ('Alteração', now());
+
+INSERT INTO TB_TIPO_TELEFONE (tipo_telefone, data_cadastro) VALUES ('Residencial', now());
+INSERT INTO TB_TIPO_TELEFONE (tipo_telefone, data_cadastro) VALUES ('Comercial', now());
+INSERT INTO TB_TIPO_TELEFONE (tipo_telefone, data_cadastro) VALUES ('Celular', now());
+
+INSERT INTO TB_TIPO_RESIDENCIA (tipo_residencia, data_cadastro) VALUES ('Casa', now());
+INSERT INTO TB_TIPO_RESIDENCIA (tipo_residencia, data_cadastro) VALUES ('Apartamento', now());
+INSERT INTO TB_TIPO_RESIDENCIA (tipo_residencia, data_cadastro) VALUES ('Comercial', now());
+
+INSERT INTO TB_TIPO_LOGRADOURO (tipo_logradouro, data_cadastro) VALUES ('Rua', now());
+INSERT INTO TB_TIPO_LOGRADOURO (tipo_logradouro, data_cadastro) VALUES ('Avenida', now());
+INSERT INTO TB_TIPO_LOGRADOURO (tipo_logradouro, data_cadastro) VALUES ('Travessa', now());
+INSERT INTO TB_TIPO_LOGRADOURO (tipo_logradouro, data_cadastro) VALUES ('Viela', now());
+INSERT INTO TB_TIPO_LOGRADOURO (tipo_logradouro, data_cadastro) VALUES ('Rodovia', now());
+
+INSERT INTO TB_TIPO_ENDERECO (tipo_endereco, data_cadastro) VALUES ('Residencial', now());
+INSERT INTO TB_TIPO_ENDERECO (tipo_endereco, data_cadastro) VALUES ('Cobrança', now());
+INSERT INTO TB_TIPO_ENDERECO (tipo_endereco, data_cadastro) VALUES ('Entrega', now());
+
+INSERT INTO TB_TIPO_CARTAO (tipo_cartao, data_cadastro) VALUES ('Crédito', now());
+INSERT INTO TB_TIPO_CARTAO (tipo_cartao, data_cadastro) VALUES ('Débito', now());
+
+INSERT INTO TB_STATUS_CLIENTE (status_cliente, data_cadastro) VALUES ('Ativo', now());
+INSERT INTO TB_STATUS_CLIENTE (status_cliente, data_cadastro) VALUES ('Inativo', now());
+
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('SP', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('MG', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('RS', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('BA', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('PR', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('SC', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('GO', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('PA', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('RJ', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('DF', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('PE', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('ES', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('CE', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('AM', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('MA', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('MT', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('MS', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('AL', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('PB', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('RR', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('SE', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('RO', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('RN', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('TO', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('PI', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('AC', 1, now());
+INSERT INTO TB_ESTADO (estado, id_pais, data_cadastro) VALUES ('AP', 1, now());
+
+INSERT INTO TB_CIDADE (cidade, id_estado, data_cadastro) VALUES ('Mogi das Cruzes', 1, now());
+INSERT INTO TB_CIDADE (cidade, id_estado, data_cadastro) VALUES ('São Paulo', 1, now());
+INSERT INTO TB_CIDADE (cidade, id_estado, data_cadastro) VALUES ('Belo Horizonte', 2, now());
+INSERT INTO TB_CIDADE (cidade, id_estado, data_cadastro) VALUES ('Porto Alegre', 3, now());
+INSERT INTO TB_CIDADE (cidade, id_estado, data_cadastro) VALUES ('Salvador', 4, now());
+
+INSERT INTO TB_BANDEIRA (bandeira, data_cadastro) VALUES ('Visa', now());
+INSERT INTO TB_BANDEIRA (bandeira, data_cadastro) VALUES ('Mastercard', now());
+
+INSERT INTO TB_BAIRRO (bairro, id_cidade, data_cadastro) VALUES ('Cezar de Souza', 1, now());
+INSERT INTO TB_BAIRRO (bairro, id_cidade, data_cadastro) VALUES ('Braz Cubas', 1, now());
+INSERT INTO TB_BAIRRO (bairro, id_cidade, data_cadastro) VALUES ('Pinheiros', 2, now());
+INSERT INTO TB_BAIRRO (bairro, id_cidade, data_cadastro) VALUES ('Bela Vista', 2, now());
+
+INSERT INTO TB_TELEFONE (ddd, telefone, id_tipo_telefone, data_cadastro) VALUES (11, '989891232', 3, now());
+INSERT INTO TB_TELEFONE (ddd, telefone, id_tipo_telefone, data_cadastro) VALUES (11, '46469900', 1, now());
+INSERT INTO TB_TELEFONE (ddd, telefone, id_tipo_telefone, data_cadastro) VALUES (11, '34343232', 2, now());
+
