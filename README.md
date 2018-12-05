@@ -4,7 +4,7 @@ Em desenvolvimento.
 ## Informações do Projeto
 * Java: versão 8;
 * Servidor: Apache Tomcat 9;
-* Banco de dados: PostgreSQL.
+* Banco de dados: MySQL.
 
 ## Design Patterns
 * View Helper;
